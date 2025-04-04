@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- <link rel="stylesheet" href=""> -->
     <link rel="stylesheet" href="/css/main.css">
@@ -38,12 +38,12 @@
                 <div id="logo"><span>경복궁</span></div>
 
                 <ul id="menu">
-                    <li>공지사항</li>
-                    <li>소개역사</li>
-                    <li>행사안내</li>
-                    <li>관람안내</li>
-                    <li>자료</li>
-                    <li>문의</li>
+                    <a href="#"><li>공지사항</li></a>
+                    <a href="#"><li>소개역사</li></a>
+                    <a href="#"><li>행사안내</li></a>
+                    <a href="#"><li>관람안내</li></a>
+                    <a href="#"><li>자료</li></a>
+                    <a href="#"><li>문의</li></a>
                 </ul>
 
             </div>
@@ -51,9 +51,28 @@
 </header>   
 
 
-<div id="topimg">
-    <!-- <img src="./img/topimg.jpg" alt="topimg"> -->
+<div id="topslide">
+    <div class="topview">    
+        <div style="background-image:url('/img/topimg.jpg')";></div>
+        <div style="background-image:url('/img/topimg1.jpg')";></div>
+        <div style="background-image:url('/img/topimg2.jpg')";></div>
+        <div style="background-image:url('/img/topimg3.jpg')";></div>
+        <!-- <img src="./img/topimg.jpg" alt="topimg"> -->  
+    </div>
+
 </div>
+
+<script>
+function topview(){
+    $('.topview').stop().animate({
+        marginLeft:'-100vw'},1500, function(){
+            $('.topview div:first').appendTo('.topview');
+            $('.topview').css({marginLeft:0});
+        });
+}
+setInterval(topview, 3000);
+    
+</script>
 
 <div class="container">
 
@@ -67,23 +86,24 @@
                     6월~8월 09:00~18:30(입장마감 17:30)</p>
         </a>
 
-       <a href="#" class="box">
+       <div class="box">
             
                 <img src="/img/box2.jpg" alt="">
                 <h3>해설 안내</h3>
-                <span>한국어</span>             
-                <span>스페인어</span>             
-                <span>프랑스어</span>             
-                <span>영어</span>             
-                <span>중국어</span>             
-                <span>일본어</span>             
-        </a>
+                <a href="#"><span>한국어</span></a>          
+                <a href="#"><span>스페인어</span></a>             
+                <a href="#"><span>프랑스어</span> </a>            
+                <a href="#"><span>영어</span>  </a>           
+                <a href="#"><span>중국어</span> </a>            
+                <a href="#"><span>일본어</span>  </a>           
+        </div>
 
-       <a href="#" class="box">
+       <div class="box">
             
-                <img src="/img/box3.jpg" alt="box3">
-                <h3>수화 해설 영상</h3>
-        </a>
+            <img src="/img/box3.jpg" alt="box3">
+            <h3>수화 해설 영상</h3>
+         
+        </div>
     </div>
 
     <div id="notic">
@@ -92,44 +112,77 @@
             <table>
                 <h3>공지사항</h3>
                 <tr>
-                    <th>25.03</th>
-                    <td>경복궁 안전 점검의 날</td>
+                    <th>25.04</th>
+                    <td><a href="#">경복궁 안전 점검의 날</a></td>
+                </tr>
+                <tr>
+                    <th>25.04</th>
+                    <td>
+                        <a href="#">대통령 탄핵 심판 선고일 경복궁 임시 휴궁 안내(2025.4.4(금))</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>25.04</th>
+                    <td>
+                        <a href="#">
+                            2025년 4월 수문장 교대 의식 행사 안내(수정)
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <th>25.03</th>
-                    <td>대통령 탄핵 심판 선고일 경복궁 임시 휴궁 안내(2025.4.4(금))</td>
+                    <td>
+                        <a href="#">
+                            2025년 직옵재(팔우정 포함) 작은 도서관 개방 안내
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <th>25.03</th>
-                    <td>2025년 4월 수문장 교대 의식 행사 안내(수정)</td>
+                    <td>
+                        <a href="#">
+                            경복궁 근정전 월대 출입 제한 안내(2025.4.2(수)~5.31(토))
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <th>25.03</th>
-                    <td>2025년 직옵재(팔우정 포함) 작은 도서관 개방 안내</td>
+                    <td>
+                        <a href="#">2025년 3월 수문장 교대의식 행사 안내
+                            
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <th>25.03</th>
-                    <td>경복궁 근정전 월대 출입 제한 안내(2025.4.2(수)~5.31(토))</td>
+                    <td>
+                        <a href="#">경복궁 안전점검의 날(2025.03.04)안내
+                        </a>
+                    </td>
                 </tr>
                 <tr>
-                    <th>25.03</th>
-                    <td>2025년 3월 수문장 교대의식 행사 안내</td>
+                    <th>25.02</th>
+                    <td>
+                        <a href="#">경복궁 안전점검의 날(2025.02.04)안내
+
+                        </a>
+                    </td>
                 </tr>
                 <tr>
-                    <th>25.03</th>
-                    <td>경복궁 안전점검의 날(2025.03.04)안내</td>
+                    <th>25.02</th>
+                    <td>
+                        <a href="#">
+                            2025년 2월 수문장 교대의식 행사 안내
+                        </a>
+                    </td>
                 </tr>
                 <tr>
-                    <th>25.03</th>
-                    <td>경복궁 안전점검의 날(2025.02.04)안내</td>
-                </tr>
-                <tr>
-                    <th>25.03</th>
-                    <td>2025년 2월 수문장 교대의식 행사 안내</td>
-                </tr>
-                <tr>
-                    <th>25.03</th>
-                    <td>경복궁 프랑스어 정규 안내 해설 운영 안내</td>
+                    <th>25.02</th>
+                    <td>
+                        <a href="#">
+                            경복궁 프랑스어 정규 안내 해설 운영 안내
+                        </a>
+                    </td>
                 </tr>
             
             </table>
@@ -158,14 +211,19 @@
 
 
     <div id="slider1">
-        <div class="sliderview">
-            <img src="" alt="">
-            <h4>경복궁</h4>
-            <p>경복궁은 1392년 조선 건국 후 1395년에 창건한 조선왕조 제일의 법궁이다.<br>
-                경복궁은 백악산을 주산으로 넓은 지형에 건물을 배치하였고 정문인 광화문 앞으로<br> 
-                넓은 육조거리가 펼쳐진 한양의 중심이었다. ‘경복’의 이름은 <br>
-                ‘새 왕조가 큰 복을 누려 번영할 것’이라는 의미가 담겨있으며, <br>
-                이곳에서 세종 대에 훈민정음이 창제되어 반포되기도 하였다.</p>
+        <div id="sliderview">
+            <!-- <img src="/img/view0.jpg" alt="view0"> -->
+            <div class="container">
+                <div id="viewtext">
+                <h1>경복궁</h1>
+                <p>경복궁은 1392년 조선 건국 후 1395년에 창건한 조선왕조 제일의 법궁이다.<br>
+                    경복궁은 백악산을 주산으로 넓은 지형에 건물을 배치하였고 정문인 광화문 앞으로<br> 
+                    넓은 육조거리가 펼쳐진 한양의 중심이었다. ‘경복’의 이름은 <br>
+                    ‘새 왕조가 큰 복을 누려 번영할 것’이라는 의미가 담겨있으며, <br>
+                    이곳에서 세종 대에 훈민정음이 창제되어 반포되기도 하였다.</p>
+                </div> 
+            </div>
+         
         </div>
 
     </div>
