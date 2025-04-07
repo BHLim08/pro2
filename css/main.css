@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+
+@media (max-width:480px) {}
+@media (max-width:768) and (min-width:1024px) {}
+@media (min-width:1024px) {}
+
+
 #topslide {width: 100%; height: 987px; overflow: hidden;}
 
 .topview {width: 400vw; height: 100%; }
@@ -11,22 +17,27 @@
         background-size: cover;}
 
 /* 헤더 */
-header {width: 100%; position: fixed;}
+header {width: 100%; height: 90px; position: fixed; z-index: 1;
+        transition: all 0.4s ease-in-out;}
 
-#header {width: 100%; height: 82px; 
-        display: flex; justify-content: space-between; align-items: flex-end;}
+#header {width: 100%; height: 90px; 
+        display: flex; justify-content: space-between; align-items: center;}
 
-#logo {width: 163px; height: 60px; font-size: 55px; letter-spacing: 1px; color: #eee;}
+#logo {width: 170px; font-size: 55px; letter-spacing: 5px;}
+#logo a {color: #eee;}
 
-#menu {width: 1000px; 
-       display: flex; justify-content: space-between;}
-#menu li {font-size: 24px; color: #eee;}
+#menu {width: 1000px; height: 90px; 
+       display: flex; justify-content: space-between; align-items: center; margin-top: 30px; }
+#menu a {font-size: 24px; color: #eee;}
+
+header:hover {background-color:#495c77c0;}
+
 
 
 
 /* 박스 */
 
-#box {width: 1271px; height: 241px; margin: -70px auto;
+#box {width: 1271px; height: 241px; margin: -70px auto; color: #333;
       display: flex; justify-content: space-between;}
 
 .box {width: 393px; height: 241px; 
@@ -48,13 +59,13 @@ header {width: 100%; position: fixed;}
 #notic {width: 1280px; height: 535px; margin: 300px auto; 
         display: flex; justify-content: space-between;}
 
-#notictb {width: 450px; height: 535px;
+#notictb {width: 450px; height: 535px; padding: 10px;
           display: flex; flex-direction: column;}
 #notictb h3 {border-radius: 8px; padding: 10px; color: aliceblue; background-color: #495C77;}
-#notictb table {width: 450px; height: 460px; margin-top: 5px;
+#notictb table {width: 450px; height: 460px; margin-top: 5px;color: #333;
                 font-size: 15px ;}
-#notictb th {width: 100px; border-bottom: 1px solid #999;}
-#notictb td {margin: 5px;text-overflow: ellipsis; white-space: nowrap; border-bottom: 1px solid #999;}
+#notictb th {width: 150px; border-bottom: 1px solid #999;}
+#notictb td {line-height: 10px; text-overflow: ellipsis; white-space: nowrap; border-bottom: 1px solid #999;}
 
 #notictb button {width: 120px; height: 50px; margin-top: 20px;
                 border-radius: 10px; border: none;
@@ -66,8 +77,8 @@ header {width: 100%; position: fixed;}
 
 #event {width: 800px; height: 535px;}
 
-.eventimg {width: 100%; height: 460px;}
-.eventimg a {width: 100%; height: 460px; display: flex; justify-content: space-between;}
+.eventimg {width: 100%; height: 450px; margin-top: 11px;}
+.eventimg a {width: 100%; height: 450px; display: flex; justify-content: space-between;}
 .eventimg img {width: 48%; height: 100%;}
 
 .eventbtn button {width: 120px; height: 50px;  margin: 15px 0 0 650px;
@@ -79,25 +90,28 @@ header {width: 100%; position: fixed;}
 
 /* 비디오 */
 
-#video {width: 1550px; height: 1000px; margin: 0 auto;
-        background-color: #495C77;}
-.video {width: 1550px; height: 872px; background-color: antiquewhite;}
+#video {width: 1550px; height: 1000px; margin: 0 auto;}
+.video {width: 100%; height: 872px;}
 .video iframe {width: 100%; height: 100%;}
 #icon {width: 852px; height: 90px;  margin: 18px auto;
         display: flex; justify-content: space-evenly;}
 #icon a {width: 90px; height: 90px; 
-        font-size: 40px; text-align: center; line-height: 90px; color: #eee;}
+        font-size: 40px; text-align: center; line-height: 90px; color: #9c9c9c;}
 
+#icon a:nth-child(1):hover {color: rgb(211, 20, 20);}
+#icon a:nth-child(2):hover {color: rgb(32, 51, 134);}
+#icon a:nth-child(3):hover {color: rgb(219, 57, 111);}
+#icon a:nth-child(4):hover {color: #333;}
 
 
 /* 서브이동박스 */
 
-#shortcut {width: 100%; height: 495px; margin: 100px auto;
+#shortcut {width: 1920px; height: 495px; margin: 100px auto;
         display: flex; justify-content: space-between;}
-.short {width: 472px; height: 495px; transition: all 0.5 ease-in-out;
+.short {width: 472px; height: 495px; max-width: 550px; transition: all 0.5 ease-in-out;
         margin: 0 auto;
         background-color: #495C77;}
-.short img {width: 472px; height: 413px; opacity: 1; transition: all 0.4s ease-in-out;}
+.short img {width: 100%; height: 413px; opacity: 1; transition: all 0.4s ease-in-out;}
 .short p {text-align: center; line-height: 30px; padding: 20px;
           font-size: 28px; color: #eee;}
 .short img:hover { opacity: 0.7;}
@@ -106,10 +120,10 @@ header {width: 100%; position: fixed;}
 #info {width: 100%; height: 782px; margin-top: 180px; 
         background-color: #eee;}
 
-#info h1 {width: 100%; padding: 120px; 
+#info h2 {width: 100%; padding: 120px; color: #333;
         text-align: center; line-height: 30px;}
 
-#infobox {width: 100%; height: 350px;
+#infobox {width: 100%; height: 350px; color: #333;
          display: flex; justify-content: space-between;}
 #infobox>a {width: 300px; height: 350px; 
            display: flex; flex-direction: column;
@@ -121,12 +135,12 @@ header {width: 100%; position: fixed;}
                 transform: scale(1); transition: all 0.5s ease-in-out;}
 
 #infobox a>p {width: 100%; height: 109px; margin-top: 40px; 
-                text-align: center; line-height: 20px;
+                text-align: center; line-height: 20px; 
                 font-size: 17px;}
 .infoimg img:hover {transform: scale(1.2); opacity: 0.7;}
 
 /* ETC */
-#etc {width: 1158px; height: 267px; margin: 120px auto;
+#etc {width: 1158px; height: 267px; margin: 120px auto; color: #333;
     display: flex; justify-content: space-around; align-items: center;
     border-radius: 10px; box-shadow: 3px 3px 5px #999;}
 
@@ -144,9 +158,9 @@ footer {width: 100%; height: 212px; background-color: rgb(212, 212, 212)}
 
 .footer img {width: 261px; height: 90px; margin-top: 30px;;}
 
-.footer p {width: 693px; margin-top: 80px;
-            font-size: 14px; letter-spacing: 2px; line-height: 20px;}
+.footer p {width: 693px; margin-top: 80px; 
+            font-size: 14px; letter-spacing: 2px; color: #333; line-height: 20px;}
 
 .footer:nth-of-type(3) {display: flex; flex-direction: column;}
-.footer button {width: 158px; height: 40px; margin: 5px;
+.footer button {width: 158px; height: 40px; margin: 5px; color: #333;
                 border-radius: 10px; border: none; background-color: #c0c0c0;}

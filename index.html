@@ -18,15 +18,24 @@
 
 
     <style>
+
         * {margin: 0; padding: 0; box-sizing: border-box;}
         a {text-decoration: none; color: #333;}
         .container {width: 1280px; margin: 0 auto;}
         table {border-collapse: collapse;}
         ul,li,ol {list-style: none;}
-        body, button {font-family: "Gowun Batang", serif;
-                font-weight: 400;
-                font-style: normal;}
+        body, button {font-family: 'RIDIBatang';
+        font-weight: normal;
+        font-style: normal;}
+                                
+        @font-face {
+        font-family: 'RIDIBatang';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;}
+
     </style>
+    
 </head>
 
 <body>
@@ -36,7 +45,12 @@
     
         <div class="container">
             <div id="header">
-                <div id="logo"><span>경복궁</span></div>
+                <div id="logo">
+                    <a href="#">
+                        <span>경복궁</span>
+                    </a>
+                    
+                </div>
 
                 <ul id="menu">
                     <a href="#"><li>공지사항</li></a>
@@ -277,7 +291,7 @@ setInterval(topview, 3000);
         
     <div class="container">
 
-                <h1>관람 안내</h1>
+                <h2>관람 안내</h2>
 
                 <div id="infobox">
                     <a href="#">
