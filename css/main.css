@@ -6,7 +6,7 @@
 
 .topview div {width: 100vw; height: 100%; float: left;
         background-repeat: no-repeat;
-        /* background-attachment: fixed;  */
+        background-attachment: fixed; 
         background-position: bottom;
         background-size: cover;}
 
@@ -34,10 +34,9 @@ header {width: 100%; position: fixed;}
         background-color: white;
         box-shadow: 2px 2px 4px #999;}
 
-.box img {height: 66px; margin: 20px auto;}
-.box:nth-child(3) {padding-top: 40px;}
+.box img {height: 66px; margin: 15px auto;}
+.box:nth-child(3) {align-content: center;}
 
- 
 
 .box h3 {width: 100%; height: 25px; text-align: center;}
 .box p {width: 100%; text-align: center; line-height: 30px;}
@@ -46,7 +45,7 @@ header {width: 100%; position: fixed;}
 
 /* 공지이벤트 */
 
-#notic {width: 1280px; height: 535px; margin: 180px auto; 
+#notic {width: 1280px; height: 535px; margin: 300px auto; 
         display: flex; justify-content: space-between;}
 
 #notictb {width: 450px; height: 535px;
@@ -60,7 +59,7 @@ header {width: 100%; position: fixed;}
 #notictb button {width: 120px; height: 50px; margin-top: 20px;
                 border-radius: 10px; border: none;
                 align-self: flex-end;
-                cur
+                cursor: pointer;
                 font-size: 18px; color: aliceblue;
                 background-color: #495C77;}
 
@@ -73,51 +72,52 @@ header {width: 100%; position: fixed;}
 
 .eventbtn button {width: 120px; height: 50px;  margin: 15px 0 0 650px;
                  border-radius: 10px; border: none;
-                 cur
+                 cursor: pointer;
                  font-size: 18px; color: aliceblue;
                  background-color: #495C77;}
 
 
-/* 슬라이더 */
+/* 비디오 */
 
-#slider {width: 100%; height: 840px; background-color: #495C77;}
-
-#slider1 {width: 100%; height: 460px; position: relative;
-        background-color: antiquewhite;}
-#sliderview {width: 100%; height: 460px;
-             background: url(/img/view0.jpg) no-repeat bottom/cover;
-             background-color: #495C77;}
-
-#viewtext {width: 1000px; height: 300px; 
-        position: absolute; top: 20%; left: 25%;
-        padding: 20px;
-        border: 20px solid white; border-radius: 30px;}
-#sliderview h1, #sliderview p {color: #3f3f3f; padding: 5px;}
-
-#sliderview p {font-size: 25px; text-align: 30px;} 
-
-#slider2 {width: 100%; height: 360px; 
-        display: flex;
+#video {width: 1550px; height: 1000px; margin: 0 auto;
         background-color: #495C77;}
-.mini {width: 339px; height: 320px; margin: 20px;}
+.video {width: 1550px; height: 872px; background-color: antiquewhite;}
+.video iframe {width: 100%; height: 100%;}
+#icon {width: 852px; height: 90px;  margin: 18px auto;
+        display: flex; justify-content: space-evenly;}
+#icon a {width: 90px; height: 90px; 
+        font-size: 40px; text-align: center; line-height: 90px; color: #eee;}
 
+
+
+/* 서브이동박스 */
+
+#shortcut {width: 100%; height: 495px; margin: 100px auto;
+        display: flex; justify-content: space-between;}
+.short {width: 472px; height: 495px; transition: all 0.5 ease-in-out;
+        margin: 0 auto;
+        background-color: #495C77;}
+.short img {width: 472px; height: 413px; opacity: 1; transition: all 0.4s ease-in-out;}
+.short p {text-align: center; line-height: 30px; padding: 20px;
+          font-size: 28px; color: #eee;}
+.short img:hover { opacity: 0.7;}
 
 /* 인포 */
-#info {width: 100%; height: 792px; background-color: #eee;}
+#info {width: 100%; height: 782px; margin-top: 180px; 
+        background-color: #eee;}
 
 #info h1 {width: 100%; padding: 120px; 
         text-align: center; line-height: 30px;}
 
-#infobox {width: 100%; height: 409px;
+#infobox {width: 100%; height: 350px;
          display: flex; justify-content: space-between;}
-#infobox>a {width: 300px; height: 409px; 
+#infobox>a {width: 300px; height: 350px; 
            display: flex; flex-direction: column;
            border-radius: 10px;
            background-color: white}
 
 .infoimg {width: 300px; height: 300px; border-radius: 10px 10px 0 0; overflow: hidden;}
-.infoimg img {width: 300px; height: 300px; 
-                
+.infoimg img {width: 300px; height: 300px;               
                 transform: scale(1); transition: all 0.5s ease-in-out;}
 
 #infobox a>p {width: 100%; height: 109px; margin-top: 40px; 
@@ -131,8 +131,7 @@ header {width: 100%; position: fixed;}
     border-radius: 10px; box-shadow: 3px 3px 5px #999;}
 
 .etcbox {width: 110px; height: 170px; text-align: center;}
-.etcbox img {width: 108px; height: 120px; 
-            border: 1px solid #c0c0c0; border-radius: 20px;}
+.etcbox img {width: 108px; height: 120px;}
 
 
 /* 푸터 */

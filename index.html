@@ -8,8 +8,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/7b6d17b275.js" crossorigin="anonymous"></script>
 
     <!-- <link rel="stylesheet" href=""> -->
     <link rel="stylesheet" href="/css/main.css">
@@ -22,9 +23,9 @@
         .container {width: 1280px; margin: 0 auto;}
         table {border-collapse: collapse;}
         ul,li,ol {list-style: none;}
-        body {font-family:"Nanum Myeongjo", serif;
+        body, button {font-family: "Gowun Batang", serif;
                 font-weight: 400;
-                 font-style: normal;}
+                font-style: normal;}
     </style>
 </head>
 
@@ -100,9 +101,9 @@ setInterval(topview, 3000);
 
        <div class="box">
             
-            <img src="/img/box3.jpg" alt="box3">
-            <h3>수화 해설 영상</h3>
-         
+                <img src="/img/box3.jpg" alt="box3">
+                <h3>수화 해설 영상</h3>
+       
         </div>
     </div>
 
@@ -210,34 +211,67 @@ setInterval(topview, 3000);
 </div>
 
 
-    <div id="slider1">
-        <div id="sliderview">
-            <!-- <img src="/img/view0.jpg" alt="view0"> -->
-            <div class="container">
-                <div id="viewtext">
-                <h1>경복궁</h1>
-                <p>경복궁은 1392년 조선 건국 후 1395년에 창건한 조선왕조 제일의 법궁이다.<br>
-                    경복궁은 백악산을 주산으로 넓은 지형에 건물을 배치하였고 정문인 광화문 앞으로<br> 
-                    넓은 육조거리가 펼쳐진 한양의 중심이었다. ‘경복’의 이름은 <br>
-                    ‘새 왕조가 큰 복을 누려 번영할 것’이라는 의미가 담겨있으며, <br>
-                    이곳에서 세종 대에 훈민정음이 창제되어 반포되기도 하였다.</p>
-                </div> 
-            </div>
-         
-        </div>
+<!-- 비디오 -->
+<div id="video">
 
+    <div class="video">
+        <iframe width="746" height="420" 
+        src="https://www.youtube.com/embed/mFPbactyo7U?autoplay=1&amp;mute=1&playlist=mFPbactyo7U&loop=1" 
+        title="2025 봄 궁궐의 문이 활짝 열립니다👀 #궁중문화축전 #경복궁 #세종" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </iframe>
     </div>
-
-    <div id="slider2">
-        <div class="mini" onclick="showSlide(0)"><img src="/img/vmini0.jpg" alt="이미지 1"></div>
-        <div class="mini" onclick="showSlide(1)"><img src="/img/vmini1.jpg" alt="이미지 2"></div>
-        <div class="mini" onclick="showSlide(2)"><img src="/img/vmini2.jpg" alt="이미지 3"></div>
-        <div class="mini" onclick="showSlide(3)"><img src="/img/vmini3.jpg" alt="이미지 4"></div>
-        <div class="mini" onclick="showSlide(4)"><img src="/img/vmini4.jpg" alt="이미지 5"></div>
+    <div id="icon">
+        <a href="https://www.youtube.com/channel/UC1_vDkQlNg0zjj-EQRXapww" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.facebook.com/royalpalacestombs" target="_blank">
+            <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/gyeongbokgung_palace_official/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://x.com/royalpalacego" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
     </div>
 
 </div>
 
+<!-- 서브이동 -->
+
+    <div id="shortcut">
+        <div class="short">
+            <a href="#">
+                <img src="./img/short1.jpg" alt="short">
+                <p>경복궁 이야기</p>
+            </a>
+        </div>
+      
+        <div class="short">
+            <a href="#">
+                <img src="./img/short2.jpg" alt="short">
+                <p>경복궁 역사</p>
+            </a>
+        </div>
+      
+        <div class="short">
+            <a href="#">
+                <img src="./img/short3.jpg" alt="short">
+                <p>경복궁 건축물</p>
+            </a>
+        </div>
+       
+        <div class="short">
+            <a href="#">
+                <img src="./img/short4.jpg" alt="short">
+                <p>안내 지도</p>
+            </a>
+        </div>
+    
+    </div>
 
 <div id="info">
         
