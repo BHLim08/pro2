@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,243 +19,275 @@
 
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        * {margin: 0; padding: 0; box-sizing: border-box;}
-        a {text-decoration: none; color: #333;}
-        .container {width: 1280px; margin: 0 auto;}
-        table {border-collapse: collapse;}
-        ul,li,ol {list-style: none;}
-        body, button {font-family: 'RIDIBatang';
-        font-weight: normal;
-        font-style: normal;}
-                                
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .container {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+        }
+
+        body,
+        button {
+            font-family: 'RIDIBatang';
+            font-weight: normal;
+            font-style: normal;
+        }
+
         @font-face {
-        font-family: 'RIDIBatang';
-        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;}
-
+            font-family: 'RIDIBatang';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
     </style>
-    
+
 </head>
 
 <body>
 
-<header>
+    <header>
 
-    
+
         <div class="container">
             <div id="header">
                 <div id="logo">
                     <a href="#">
                         <span>경복궁</span>
                     </a>
-                    
+
                 </div>
 
                 <ul id="menu">
-                    <a href="#"><li>공지사항</li></a>
-                    <a href="#"><li>소개역사</li></a>
-                    <a href="#"><li>행사안내</li></a>
-                    <a href="#"><li>관람안내</li></a>
-                    <a href="#"><li>자료</li></a>
-                    <a href="#"><li>문의</li></a>
+                    <a href="#">
+                        <li>공지사항</li>
+                    </a>
+                    <a href="#">
+                        <li>소개역사</li>
+                    </a>
+                    <a href="#">
+                        <li>행사안내</li>
+                    </a>
+                    <a href="#">
+                        <li>관람안내</li>
+                    </a>
+                    <a href="#">
+                        <li>자료</li>
+                    </a>
+                    <a href="#">
+                        <li>문의</li>
+                    </a>
                 </ul>
 
             </div>
         </div>
-</header>   
+    </header>
 
 
-<div id="topslide">
-    <div class="topview">    
-        <div style="background-image:url('./img/topimg.jpg')";></div>
-        <div style="background-image:url('./img/topimg1.jpg')";></div>
-        <div style="background-image:url('./img/topimg2.jpg')";></div>
-        <div style="background-image:url('./img/topimg3.jpg')";></div>
-        <!-- <img src="./img/topimg.jpg" alt="topimg"> -->  
+    <div id="topslide">
+        <div class="topview">
+            <div style="background-image:url('./img/topimg.jpg')" ;></div>
+            <div style="background-image:url('./img/topimg1.jpg')" ;></div>
+            <div style="background-image:url('./img/topimg2.jpg')" ;></div>
+            <div style="background-image:url('./img/topimg3.jpg')" ;></div>
+            <!-- <img src="./img/topimg.jpg" alt="topimg"> -->
+        </div>
+
     </div>
 
-</div>
 
-<script>
-function topview(){
-    $('.topview').stop().animate({
-        marginLeft:'-100vw'},1500, function(){
-            $('.topview div:first').appendTo('.topview');
-            $('.topview').css({marginLeft:0});
-        });
-}
-setInterval(topview, 3000);
-    
-</script>
 
-<div class="container">
+    <div class="container">
 
-    <div id="box">
-       <a href="#" class="box">
-            
-                <img src="./img/box1.jpg" alt="">
+        <div id="box">
+            <a href="#" class="box">
+
+                <span><i class="fa-solid fa-clock"></i></span>
                 <h3>관람 시간 안내</h3>
-                <p>1~2월, 11월~12월 - 09:00~17:00(입장마감 16:00) <br>
+                <p>1~2월, 11월~12월 09:00~17:00(입장마감 16:00) <br>
                     3월~5월, 9월~10월 09:00~18:00(입장마감 17:00) <br>
                     6월~8월 09:00~18:30(입장마감 17:30)</p>
-        </a>
+            </a>
 
-       <div class="box">
-            
-                <img src="./img/box2.jpg" alt="">
+            <a href="#" class="box">
+
+                <span>
+                    <i class="fa-solid fa-volume-high"></i>
+                </span>
                 <h3>해설 안내</h3>
-                <a href="#"><span>한국어</span></a>          
-                <a href="#"><span>스페인어</span></a>             
-                <a href="#"><span>프랑스어</span> </a>            
-                <a href="#"><span>영어</span>  </a>           
-                <a href="#"><span>중국어</span> </a>            
-                <a href="#"><span>일본어</span>  </a>           
-        </div>
+                <table>
+                    <tr>
+                        <td>한국어</td>
+                        <td>영어</td>
+                        <td>일본어</td>
+                    </tr>
+                    <tr>
+                        <td>스페인어</td>
+                        <td>프랑스어</td>
+                        <td>중국어</td>
+                    </tr>
+                </table>
 
-       <div class="box">
-            
+            </a>
+
+            <a href="#" class="box">
+
                 <img src="./img/box3.jpg" alt="box3">
                 <h3>수화 해설 영상</h3>
-       
-        </div>
-    </div>
 
-    <div id="notic">
-        <div id="notictb">
-
-            <table>
-                <h3>공지사항</h3>
-                <tr>
-                    <th>25.04</th>
-                    <td><a href="#">경복궁 안전 점검의 날</a></td>
-                </tr>
-                <tr>
-                    <th>25.04</th>
-                    <td>
-                        <a href="#">대통령 탄핵 심판 선고일 경복궁 임시 휴궁 안내(2025.4.4(금))</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>25.04</th>
-                    <td>
-                        <a href="#">
-                            2025년 4월 수문장 교대 의식 행사 안내(수정)
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>25.03</th>
-                    <td>
-                        <a href="#">
-                            2025년 직옵재(팔우정 포함) 작은 도서관 개방 안내
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>25.03</th>
-                    <td>
-                        <a href="#">
-                            경복궁 근정전 월대 출입 제한 안내(2025.4.2(수)~5.31(토))
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>25.03</th>
-                    <td>
-                        <a href="#">2025년 3월 수문장 교대의식 행사 안내
-                            
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>25.03</th>
-                    <td>
-                        <a href="#">경복궁 안전점검의 날(2025.03.04)안내
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>25.02</th>
-                    <td>
-                        <a href="#">경복궁 안전점검의 날(2025.02.04)안내
-
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>25.02</th>
-                    <td>
-                        <a href="#">
-                            2025년 2월 수문장 교대의식 행사 안내
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>25.02</th>
-                    <td>
-                        <a href="#">
-                            경복궁 프랑스어 정규 안내 해설 운영 안내
-                        </a>
-                    </td>
-                </tr>
-            
-            </table>
-
-            <button>더 보기</button>
-
+            </a>
         </div>
 
-        <div id="event">
+        <div id="notic">
+            <div id="notictb">
 
-            <div class="eventimg">
-                <a href="#">
-                    <img src="./img/event1.jpg" alt="event1">
-                    <img src="./img/event2.jpg" alt="event2">
-                </a>
-            </div>
+                <table>
+                    <h3>공지사항</h3>
+                    <tr>
+                        <th>25.04</th>
+                        <td><a href="#">경복궁 안전 점검의 날</a></td>
+                    </tr>
+                    <tr>
+                        <th>25.04</th>
+                        <td>
+                            <a href="#">대통령 탄핵 심판 선고일 경복궁 임시 휴궁 안내(2025.4.4(금))</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>25.04</th>
+                        <td>
+                            <a href="#">
+                                2025년 4월 수문장 교대 의식 행사 안내(수정)
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>25.03</th>
+                        <td>
+                            <a href="#">
+                                2025년 직옵재(팔우정 포함) 작은 도서관 개방 안내
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>25.03</th>
+                        <td>
+                            <a href="#">
+                                경복궁 근정전 월대 출입 제한 안내(2025.4.2(수)~5.31(토))
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>25.03</th>
+                        <td>
+                            <a href="#">2025년 3월 수문장 교대의식 행사 안내
 
-            <div class="eventbtn">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>25.03</th>
+                        <td>
+                            <a href="#">경복궁 안전점검의 날(2025.03.04)안내
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>25.02</th>
+                        <td>
+                            <a href="#">경복궁 안전점검의 날(2025.02.04)안내
+
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>25.02</th>
+                        <td>
+                            <a href="#">
+                                2025년 2월 수문장 교대의식 행사 안내
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>25.02</th>
+                        <td>
+                            <a href="#">
+                                경복궁 프랑스어 정규 안내 해설 운영 안내
+                            </a>
+                        </td>
+                    </tr>
+
+                </table>
+
                 <button>더 보기</button>
+
             </div>
-            
+
+            <div id="event">
+
+                <div class="eventimg">
+                    <a href="#">
+                        <img src="./img/event1.jpg" alt="event1">
+                        <img src="./img/event2.jpg" alt="event2">
+                    </a>
+                </div>
+
+                <div class="eventbtn">
+                    <button>더 보기</button>
+                </div>
+
+            </div>
+
         </div>
-        
-    </div>
-</div>
-
-
-<!-- 비디오 -->
-<div id="video">
-
-    <div class="video">
-        <iframe width="746" height="420" 
-        src="https://www.youtube.com/embed/mFPbactyo7U?autoplay=1&amp;mute=1&playlist=mFPbactyo7U&loop=1" 
-        title="2025 봄 궁궐의 문이 활짝 열립니다👀 #궁중문화축전 #경복궁 #세종" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-        picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </iframe>
-    </div>
-    <div id="icon">
-        <a href="https://www.youtube.com/channel/UC1_vDkQlNg0zjj-EQRXapww" target="_blank">
-            <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://www.facebook.com/royalpalacestombs" target="_blank">
-            <i class="fa-brands fa-square-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/gyeongbokgung_palace_official/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://x.com/royalpalacego" target="_blank">
-            <i class="fa-brands fa-x-twitter"></i>
-        </a>
     </div>
 
-</div>
 
-<!-- 서브이동 -->
+    <!-- 비디오 -->
+    <div id="video">
+
+        <div class="video">
+            <iframe width="746" height="420"
+                src="https://www.youtube.com/embed/mFPbactyo7U?autoplay=1&amp;mute=1&playlist=mFPbactyo7U&loop=1"
+                title="2025 봄 궁궐의 문이 활짝 열립니다👀 #궁중문화축전 #경복궁 #세종" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </iframe>
+        </div>
+        <div id="icon">
+            <a href="https://www.youtube.com/channel/UC1_vDkQlNg0zjj-EQRXapww" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/royalpalacestombs" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/gyeongbokgung_palace_official/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://x.com/royalpalacego" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- 서브이동 -->
 
     <div id="shortcut">
         <div class="short">
@@ -263,70 +296,70 @@ setInterval(topview, 3000);
                 <p>경복궁 이야기</p>
             </a>
         </div>
-      
+
         <div class="short">
             <a href="#">
                 <img src="./img/short2.jpg" alt="short">
                 <p>경복궁 역사</p>
             </a>
         </div>
-      
+
         <div class="short">
             <a href="#">
                 <img src="./img/short3.jpg" alt="short">
                 <p>경복궁 건축물</p>
             </a>
         </div>
-       
+
         <div class="short">
             <a href="#">
                 <img src="./img/short4.jpg" alt="short">
                 <p>안내 지도</p>
             </a>
         </div>
-    
+
     </div>
 
-<div id="info">
-        
+    <div id="info">
+
+        <div class="container">
+
+            <h2>관람 안내</h2>
+
+            <div id="infobox">
+                <a href="#">
+                    <div class="infoimg">
+                        <img src="./img/info1.jpg" alt="info1">
+                    </div>
+                    <p>한복 무료 관람<br>가이드 라인</p>
+                </a>
+                <a href="#">
+                    <div class="infoimg">
+                        <img src="./img/info2.jpg" alt="info2">
+                    </div>
+                    <p>관광 코스 안내</p>
+                </a>
+                <a href="#">
+                    <div class="infoimg">
+                        <img src="./img/info3.jpg" alt="info3">
+                    </div>
+                    <p>대중 교통 안내</p>
+                </a>
+                <a href="#">
+                    <div class="infoimg">
+                        <img src="./img/info4.jpg" alt="info4">
+                    </div>
+                    <p>주차장 안내</p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
     <div class="container">
 
-                <h2>관람 안내</h2>
-
-                <div id="infobox">
-                    <a href="#">
-                        <div class="infoimg">
-                            <img src="./img/info1.jpg" alt="info1">
-                        </div>
-                        <p>한복 무료 관람<br>가이드 라인</p>
-                    </a>
-                    <a href="#">
-                        <div class="infoimg">
-                            <img src="./img/info2.jpg" alt="info2">
-                        </div>
-                        <p>관광 코스 안내</p>
-                    </a>
-                    <a href="#">
-                        <div class="infoimg">
-                            <img src="./img/info3.jpg" alt="info3">
-                        </div>
-                        <p>대중 교통 안내</p>
-                    </a>
-                    <a href="#">
-                        <div class="infoimg">
-                            <img src="./img/info4.jpg" alt="info4">
-                        </div>
-                        <p>주차장 안내</p>
-                    </a>
-                </div>
-                
-    </div>
-
-</div>
-
-<div class="container">
-
-    <div id="etc">
+        <div id="etc">
 
             <a href="#" class="etcbox">
                 <img src="./img/etc1.jpg" alt="">
@@ -349,39 +382,74 @@ setInterval(topview, 3000);
             </a>
 
 
+        </div>
+
     </div>
 
-</div>
+    <footer>
 
-<footer>
+        <div class="container">
 
-    <div class="container">
-    
-    <div id="footer">
+            <div id="footer">
 
-        <div class="footer">
-            <img src="./img/footerlogo.png" alt="footerlogo">
+                <div class="footer">
+                    <img src="./img/footerlogo.png" alt="footerlogo">
+                </div>
+
+                <div class="footer">
+                    <p>기관 : 경복궁관리소[03045] 주소 : 서울 종로구 사직로 161 전화번호 : 02-3700-3900 <br>
+                        ⓒ Korea Heritage Service Royal Palaces and Tombs Center. All rights reserved.</p>
+                </div>
+
+                <div class="footer">
+
+                    <button>개인정보처리방침</button>
+                    <button>저작권 정책</button>
+                    <button>안전신문고</button>
+                    <button>도로명주소안내</button>
+
+                </div>
+
+
+            </div>
         </div>
 
-        <div class="footer">
-            <p>기관 : 경복궁관리소[03045] 주소  : 서울 종로구 사직로 161 전화번호 : 02-3700-3900 <br>
-            ⓒ Korea Heritage Service Royal Palaces and Tombs Center. All rights reserved.</p>
-        </div>
-        
-        <div class="footer">
+    </footer>
 
-            <button>개인정보처리방침</button>
-            <button>저작권 정책</button>
-            <button>안전신문고</button>
-            <button>도로명주소안내</button>
+    <script>
+        //탑슬라이더
+        function topview() {
+            $('.topview').stop().animate({
+                marginLeft: '-100vw'
+            }, 1600, function () {
+                $('.topview div:first').appendTo('.topview');
+                $('.topview').css({ marginLeft: 0 });
+            });
+        }
+        setInterval(topview, 3500);
 
-        </div>
+       
+        // //헤더컬러체인지
+    $(document).ready(function () {
+        let currentScrollTop = 0;
+        $(window).scroll(function () {
+            currentScrollTop = $(window).scrollTop();
+            if (currentScrollTop > 1000) {
+                $("header").addClass("scroll");
+            } else {
+                $("header").removeClass("scroll");
+            }
 
+            if (currentScrollTop > 2100 && currentScrollTop < 3094) {
+                $("header").fadeOut();
+            } else {
+                $("header").fadeIn();
+            }
 
-        </div>  
-    </div> 
+        });
+    });
 
-</footer>
-
+    </script>
 </body>
+
 </html>

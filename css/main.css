@@ -1,11 +1,9 @@
 @charset "utf-8";
 
-/* 
+
 @media (max-width:480px) {}
-@media (max-width:768) and (min-width:1024px) {}
-@media (min-width:1024px) {} */
-
-
+@media (max-width:768) and (min-width:1565px) {}
+@media (min-width:1565px) {
 #topslide {width: 100%; height: 987px; overflow: hidden;}
 
 .topview {width: 400vw; height: 100%; }
@@ -30,7 +28,8 @@ header {width: 100%; height: 90px; position: fixed; z-index: 1;
        display: flex; justify-content: space-between; align-items: center; margin-top: 30px; }
 #menu a {font-size: 24px; color: #eee;}
 
-header:hover {background-color:#495c77c0;}
+header:hover,.scroll {background-color:#495c77c0;}
+
 
 
 
@@ -41,30 +40,28 @@ header:hover {background-color:#495c77c0;}
       display: flex; justify-content: space-between;}
 
 .box {width: 393px; height: 241px; 
-      display: flex; flex-flow: row wrap;
+        display: flex; flex-wrap: wrap; justify-content: center; align-content: space-evenly;
+        text-align: center; line-height: 25px;
+        padding: 15px;
         background-color: white;
         box-shadow: 2px 2px 4px #999;}
 
-.box img {height: 66px; margin: 15px auto;}
-.box:nth-child(3) {align-content: center;}
+.box span {width: 100%;  font-size: 40px;}
+.box h3 {width: 100%; }
+.box table {width: 95%; letter-spacing: 5px; line-height: 30px;}
 
-
-.box h3 {width: 100%; height: 25px; text-align: center;}
-.box p {width: 100%; text-align: center; line-height: 30px;}
-.box a {width: 33%; height: 20%; text-align: center; line-height: 50px;}
-.box a:hover {background-color: #eee;}
 
 /* 공지이벤트 */
 
 #notic {width: 1280px; height: 535px; margin: 300px auto; 
         display: flex; justify-content: space-between;}
 
-#notictb {width: 450px; height: 535px; padding: 10px;
+#notictb {width: 450px; height: 535px;
           display: flex; flex-direction: column;}
 #notictb h3 {border-radius: 8px; padding: 10px; color: aliceblue; background-color: #495C77;}
-#notictb table {width: 450px; height: 460px; margin-top: 5px;color: #333;
+#notictb table {width: 380px; height: 460px; margin-top: 5px;color: #333;
                 font-size: 15px ;}
-#notictb th {width: 150px; border-bottom: 1px solid #999;}
+#notictb th {width: 150px; padding: 10px; border-bottom: 1px solid #999;}
 #notictb td {line-height: 10px; text-overflow: ellipsis; white-space: nowrap; border-bottom: 1px solid #999;}
 
 #notictb button {width: 120px; height: 50px; margin-top: 20px;
@@ -95,8 +92,8 @@ header:hover {background-color:#495c77c0;}
 .video iframe {width: 100%; height: 100%;}
 #icon {width: 852px; height: 90px;  margin: 18px auto;
         display: flex; justify-content: space-evenly;}
-#icon a {width: 90px; height: 90px; 
-        font-size: 40px; text-align: center; line-height: 90px; color: #9c9c9c;}
+#icon a {width: 90px; height: 90px; padding: 10px;
+        font-size: 50px; text-align: center; line-height: 90px; color: #9c9c9c;}
 
 #icon a:nth-child(1):hover {color: rgb(211, 20, 20);}
 #icon a:nth-child(2):hover {color: rgb(32, 51, 134);}
@@ -106,37 +103,196 @@ header:hover {background-color:#495c77c0;}
 
 /* 서브이동박스 */
 
-#shortcut {width: 1920px; height: 495px; margin: 100px auto;
+#shortcut {width: 100%; margin: 200px auto;
         display: flex; justify-content: space-between;}
-.short {width: 472px; height: 495px; max-width: 550px; transition: all 0.5 ease-in-out;
-        margin: 0 auto;
+.short {width: 24%; transition: all 0.5 ease-in-out;
+        margin: 0 auto; border-radius: 10px;
         background-color: #495C77;}
-.short img {width: 100%; height: 413px; opacity: 1; transition: all 0.4s ease-in-out;}
-.short p {text-align: center; line-height: 30px; padding: 20px;
-          font-size: 28px; color: #eee;}
+.short img {width: 100%; border-radius: 10px 10px 0 0; opacity: 1; transition: all 0.4s ease-in-out;}
+.short p {text-align: center; line-height: 30px; padding: 15px;
+          font-size: 25px; color: #eee;}
 .short img:hover { opacity: 0.7;}
 
 /* 인포 */
-#info {width: 100%; height: 782px; margin-top: 180px; 
+#info {width: 100%; height: 650px; margin-top: 180px; 
         background-color: #eee;}
 
-#info h2 {width: 100%; padding: 120px; color: #333;
+#info h2 {padding: 100px; color: #333;
         text-align: center; line-height: 30px;}
 
-#infobox {width: 100%; height: 350px; color: #333;
+#infobox {width: 100%; height: 300px; color: #333;
          display: flex; justify-content: space-between;}
-#infobox>a {width: 300px; height: 350px; 
+#infobox>a {width: 300px; height: 300px; 
            display: flex; flex-direction: column;
            border-radius: 10px;
            background-color: white}
 
-.infoimg {width: 300px; height: 300px; border-radius: 10px 10px 0 0; overflow: hidden;}
-.infoimg img {width: 300px; height: 300px;               
+.infoimg {width: 100%; height: 230px; border-radius: 10px 10px 0 0; overflow: hidden;}
+.infoimg img {width: 100%; height: 100%;           
                 transform: scale(1); transition: all 0.5s ease-in-out;}
 
-#infobox a>p {width: 100%; height: 109px; margin-top: 40px; 
-                text-align: center; line-height: 20px; 
-                font-size: 17px;}
+#infobox a>p {width: 100%; height: 70px; align-content: center;
+                text-align: center;}
+
+.infoimg img:hover {transform: scale(1.2); opacity: 0.7;}
+
+/* ETC */
+#etc {width: 1158px; height: 267px; margin: 120px auto; color: #333;
+    display: flex; justify-content: space-around; align-items: center;
+    border-radius: 10px; box-shadow: 3px 3px 5px #999;}
+
+.etcbox {width: 110px; height: 170px; text-align: center;}
+.etcbox img {width: 108px; height: 120px;}
+
+
+/* 푸터 */
+footer {width: 100%; height: 212px; background-color: rgb(212, 212, 212)}
+
+#footer {width: 100%; height: 212px; 
+        display: flex; justify-content: space-between; align-items: center;}
+
+.footer {height: 150px; margin: 0 auto;}
+
+.footer img {width: 261px; height: 90px; margin-top: 30px;;}
+
+.footer p {width: 693px; margin-top: 80px; 
+            font-size: 14px; letter-spacing: 2px; color: #333; line-height: 20px;}
+
+.footer:nth-of-type(3) {display: flex; flex-direction: column;}
+.footer button {width: 158px; height: 40px; margin: 5px; color: #333;
+                border-radius: 10px; border: none; background-color: #c0c0c0;}}
+
+
+#topslide {width: 100%; height: 987px; overflow: hidden;}
+
+.topview {width: 400vw; height: 100%; }
+
+.topview div {width: 100vw; height: 100%; float: left;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-position: bottom;
+        background-size: cover;}
+
+/* 헤더 */
+header {width: 100%; height: 90px; position: fixed; z-index: 1;
+        transition: all 0.4s ease-in-out;}
+
+#header {width: 100%; height: 90px; 
+        display: flex; justify-content: space-between; align-items: center;}
+
+#logo {width: 170px; font-size: 55px; letter-spacing: 5px;}
+#logo a {color: #eee;}
+
+#menu {width: 1000px; height: 90px; 
+       display: flex; justify-content: space-between; align-items: center; margin-top: 30px; }
+#menu a {font-size: 24px; color: #eee;}
+
+header:hover,.scroll {background-color:#495c77c0;}
+
+
+
+
+
+/* 박스 */
+
+#box {width: 1271px; height: 241px; margin: -70px auto; color: #333;
+      display: flex; justify-content: space-between;}
+
+.box {width: 393px; height: 241px; 
+        display: flex; flex-wrap: wrap; justify-content: center; align-content: space-evenly;
+        text-align: center; line-height: 25px;
+        padding: 15px;
+        background-color: white;
+        box-shadow: 2px 2px 4px #999;}
+
+.box span {width: 100%;  font-size: 40px;}
+.box h3 {width: 100%; }
+.box table {width: 95%; letter-spacing: 5px; line-height: 30px;}
+
+
+/* 공지이벤트 */
+
+#notic {width: 1280px; height: 535px; margin: 300px auto; 
+        display: flex; justify-content: space-between;}
+
+#notictb {width: 450px; height: 535px;
+          display: flex; flex-direction: column;}
+#notictb h3 {border-radius: 8px; padding: 10px; color: aliceblue; background-color: #495C77;}
+#notictb table {width: 380px; height: 460px; margin-top: 5px;color: #333;
+                font-size: 15px ;}
+#notictb th {width: 150px; padding: 10px; border-bottom: 1px solid #999;}
+#notictb td {line-height: 10px; text-overflow: ellipsis; white-space: nowrap; border-bottom: 1px solid #999;}
+
+#notictb button {width: 120px; height: 50px; margin-top: 20px;
+                border-radius: 10px; border: none;
+                align-self: flex-end;
+                cursor: pointer;
+                font-size: 18px; color: aliceblue;
+                background-color: #495C77;}
+
+
+#event {width: 800px; height: 535px;}
+
+.eventimg {width: 100%; height: 450px; margin-top: 11px;}
+.eventimg a {width: 100%; height: 450px; display: flex; justify-content: space-between;}
+.eventimg img {width: 48%; height: 100%;}
+
+.eventbtn button {width: 120px; height: 50px;  margin: 15px 0 0 650px;
+                 border-radius: 10px; border: none;
+                 cursor: pointer;
+                 font-size: 18px; color: aliceblue;
+                 background-color: #495C77;}
+
+
+/* 비디오 */
+
+#video {width: 1550px; height: 1000px; margin: 0 auto;}
+.video {width: 100%; height: 872px;}
+.video iframe {width: 100%; height: 100%;}
+#icon {width: 852px; height: 90px;  margin: 18px auto;
+        display: flex; justify-content: space-evenly;}
+#icon a {width: 90px; height: 90px; padding: 10px;
+        font-size: 50px; text-align: center; line-height: 90px; color: #9c9c9c;}
+
+#icon a:nth-child(1):hover {color: rgb(211, 20, 20);}
+#icon a:nth-child(2):hover {color: rgb(32, 51, 134);}
+#icon a:nth-child(3):hover {color: rgb(219, 57, 111);}
+#icon a:nth-child(4):hover {color: #333;}
+
+
+/* 서브이동박스 */
+
+#shortcut {width: 100%; margin: 200px auto;
+        display: flex; justify-content: space-between;}
+.short {width: 24%; transition: all 0.5 ease-in-out;
+        margin: 0 auto; border-radius: 10px;
+        background-color: #495C77;}
+.short img {width: 100%; border-radius: 10px 10px 0 0; opacity: 1; transition: all 0.4s ease-in-out;}
+.short p {text-align: center; line-height: 30px; padding: 15px;
+          font-size: 25px; color: #eee;}
+.short img:hover { opacity: 0.7;}
+
+/* 인포 */
+#info {width: 100%; height: 650px; margin-top: 180px; 
+        background-color: #eee;}
+
+#info h2 {padding: 100px; color: #333;
+        text-align: center; line-height: 30px;}
+
+#infobox {width: 100%; height: 300px; color: #333;
+         display: flex; justify-content: space-between;}
+#infobox>a {width: 300px; height: 300px; 
+           display: flex; flex-direction: column;
+           border-radius: 10px;
+           background-color: white}
+
+.infoimg {width: 100%; height: 230px; border-radius: 10px 10px 0 0; overflow: hidden;}
+.infoimg img {width: 100%; height: 100%;           
+                transform: scale(1); transition: all 0.5s ease-in-out;}
+
+#infobox a>p {width: 100%; height: 70px; align-content: center;
+                text-align: center;}
+
 .infoimg img:hover {transform: scale(1.2); opacity: 0.7;}
 
 /* ETC */
