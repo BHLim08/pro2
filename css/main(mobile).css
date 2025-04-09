@@ -2,6 +2,10 @@
 
 
 @media (max-width:768px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
 
     /* 탑슬라이더 */
     #topslide {
@@ -28,7 +32,6 @@
     /* 헤더 */
     header {
         width: 100%;
-        height: 90px;
         position: fixed;
         z-index: 1;
         transition: all 0.4s ease-in-out;
@@ -36,63 +39,58 @@
 
     #header {
         width: 100%;
-        height: 90px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
     }
 
+    #header a {
+        color: #eee;
+    }
+    
     #logo {
-        width: 170px;
         font-size: 55px;
         letter-spacing: 5px;
     }
 
-    #logo a {
-        color: #eee;
-    }
 
-    #menu {
-        width: 1000px;
-        height: 90px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 30px;
-    }
+    #menu2 {display: block;
+            font-size: 38px; color: #eee; margin-top: 3%;
+            cursor: pointer;}
 
-    #menu a {
-        font-size: 24px;
-        color: #eee;
-    }
+    #menu {display: none;}
+
+    #menu {width: 100%;}
+    ul,li {width: 100%; padding: 10px;}
 
     header:hover,
     .scroll {
         background-color: #495c77c0;
     }
 
+    #menu a:hover  {background-color: #eee; color:#333;}
+
 
     /* 박스 */
 
     #box {
-        width: 1271px;
-        height: 241px;
+        width: 100%;
+        position: relative;
+        height: auto;
         margin: -70px auto;
         color: #333;
-        display: flex;
-        justify-content: space-between;
     }
 
     .box {
-        width: 393px;
-        height: 241px;
+        width: 80%;
+        margin: 2%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: space-evenly;
         text-align: center;
-        line-height: 25px;
-        padding: 15px;
+        line-height: 30px;
+        padding: 2%;
         background-color: white;
         box-shadow: 2px 2px 4px #999;
     }
@@ -103,29 +101,28 @@
     }
 
     .box h3 {
+        padding: 2%;
         width: 100%;
     }
 
     .box table {
-        width: 95%;
-        letter-spacing: 5px;
-        line-height: 30px;
+        width: 100%;
+
     }
 
 
     /* 공지이벤트 */
 
     #notic {
-        width: 1280px;
-        height: 535px;
+        width: 100%;
         margin: 300px auto;
-        display: flex;
-        justify-content: space-between;
     }
 
     #notictb {
-        width: 450px;
-        height: 535px;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         display: flex;
         flex-direction: column;
     }
@@ -138,29 +135,27 @@
     }
 
     #notictb table {
-        width: 380px;
-        height: 460px;
+        width: 100%;
         margin-top: 5px;
         color: #333;
         font-size: 15px;
     }
 
     #notictb th {
-        width: 150px;
-        padding: 10px;
+        padding: 5px;
         border-bottom: 1px solid #999;
     }
 
     #notictb td {
-        line-height: 10px;
+        overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
         border-bottom: 1px solid #999;
     }
 
     #notictb button {
-        width: 120px;
-        height: 50px;
+        width: 100px;
+        height: 45px;
         margin-top: 20px;
         border-radius: 10px;
         border: none;
@@ -173,32 +168,22 @@
 
 
     #event {
-        width: 800px;
-        height: 535px;
+        margin: 10% auto;
+        width: 100%;
     }
 
     .eventimg {
-        width: 100%;
-        height: 450px;
-        margin-top: 11px;
-    }
-
-    .eventimg a {
-        width: 100%;
-        height: 450px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        width: 100%;
     }
-
-    .eventimg img {
-        width: 48%;
-        height: 100%;
-    }
+    .eventimg img {width: 48%;}
 
     .eventbtn button {
-        width: 120px;
-        height: 50px;
-        margin: 15px 0 0 650px;
+        width: 100px;
+        height: 44px;
+        float: right;
+        margin-top: 20px;
         border-radius: 10px;
         border: none;
         cursor: pointer;
@@ -207,40 +192,30 @@
         background-color: #495C77;
     }
 
-
     /* 비디오 */
 
     #video {
-        width: 1550px;
-        height: 1000px;
-        margin: 0 auto;
-    }
-
-    .video {
         width: 100%;
-        height: 872px;
+        margin: 0 auto;
     }
 
     .video iframe {
         width: 100%;
-        height: 100%;
+        height: 600px;
     }
 
     #icon {
-        width: 852px;
-        height: 90px;
+        width: 70%;
+        padding: 15px;
         margin: 18px auto;
         display: flex;
         justify-content: space-evenly;
     }
 
     #icon a {
-        width: 90px;
-        height: 90px;
-        padding: 10px;
-        font-size: 50px;
+
+        font-size: 3.5vw;
         text-align: center;
-        line-height: 90px;
         color: #9c9c9c;
     }
 
@@ -265,14 +240,14 @@
 
     #shortcut {
         width: 100%;
-        margin: 200px auto;
-        display: flex;
-        justify-content: space-between;
+        margin: 19% auto;
     }
 
     .short {
-        width: 24%;
+        width: 48%;
         transition: all 0.5 ease-in-out;
+        display: flex;
+
         margin: 0 auto;
         border-radius: 10px;
         background-color: #495C77;
@@ -287,9 +262,8 @@
 
     .short p {
         text-align: center;
-        line-height: 30px;
-        padding: 15px;
-        font-size: 25px;
+        padding: 3%;
+        font-size: 4vw;
         color: #eee;
     }
 
@@ -300,7 +274,7 @@
     /* 인포 */
     #info {
         width: 100%;
-        height: 650px;
+        padding-bottom: 8%;
         margin-top: 180px;
         background-color: #eee;
     }
@@ -314,15 +288,14 @@
 
     #infobox {
         width: 100%;
-        height: 300px;
+        margin: 10px;
         color: #333;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     #infobox>a {
-        width: 300px;
-        height: 300px;
+        width: 23%;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
@@ -331,7 +304,7 @@
 
     .infoimg {
         width: 100%;
-        height: 230px;
+        height: 80%;
         border-radius: 10px 10px 0 0;
         overflow: hidden;
     }
@@ -345,7 +318,7 @@
 
     #infobox a>p {
         width: 100%;
-        height: 70px;
+        height: 20%;
         align-content: center;
         text-align: center;
     }
@@ -357,74 +330,75 @@
 
     /* ETC */
     #etc {
-        width: 1158px;
-        height: 267px;
+        width: 80%;
+        padding: 25px;
         margin: 120px auto;
         color: #333;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #999;
     }
 
     .etcbox {
-        width: 110px;
-        height: 170px;
+        width: 100%;
         text-align: center;
     }
 
     .etcbox img {
-        width: 108px;
-        height: 120px;
+        width: 50%;
     }
 
 
     /* 푸터 */
     footer {
         width: 100%;
-        height: 212px;
         background-color: rgb(212, 212, 212)
     }
 
     #footer {
         width: 100%;
-        height: 212px;
+        margin: 0 auto;
+        padding: 2%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
+
     }
 
     .footer {
-        height: 150px;
-        margin: 0 auto;
+        margin: 1%;
+    }
+
+    .footer:nth-child(1) {
+        width: 100%;
     }
 
     .footer img {
-        width: 261px;
-        height: 90px;
-        margin-top: 30px;
-        ;
+        width: 20%;
     }
 
     .footer p {
-        width: 693px;
-        margin-top: 80px;
-        font-size: 14px;
-        letter-spacing: 2px;
+        width: 100%;
+        font-size: 1.1vmax;
+        letter-spacing: 1px;
         color: #333;
-        line-height: 20px;
     }
 
     .footer:nth-of-type(3) {
+        width: 18%;
         display: flex;
         flex-direction: column;
+        margin-top: -9%;
     }
 
     .footer button {
-        width: 158px;
-        height: 40px;
-        margin: 5px;
+        width: 80%;
+        height: 30%;
+        font-size: 1.2vmax;
+        margin: 3%;
+        cursor: pointer;
         color: #333;
         border-radius: 10px;
         border: none;

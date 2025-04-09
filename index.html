@@ -43,7 +43,7 @@
 
         ul,
         li,
-        ol {
+        ol {margin: 0; padding: 0;
             list-style: none;
         }
 
@@ -78,30 +78,40 @@
 
                 </div>
 
-                <ul id="menu">
-                    <a href="#">
-                        <li>공지사항</li>
-                    </a>
-                    <a href="#">
-                        <li>소개역사</li>
-                    </a>
-                    <a href="#">
-                        <li>행사안내</li>
-                    </a>
-                    <a href="#">
-                        <li>관람안내</li>
-                    </a>
-                    <a href="#">
-                        <li>자료</li>
-                    </a>
-                    <a href="#">
-                        <li>문의</li>
-                    </a>
-                </ul>
+                <div id="menu2">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <nav id="menu">
+                    <ul>
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">소개역사</a>
+                        </li>
+                        <li>
+                            <a href="#">행사안내</a>
+                        </li>
+                        <li>
+                            <a>관람안내</a>
+                        </li>
+                        <li>
+                            <a href="#">자료</a>
+                        </li>
+                        <li>
+                            <a href="#">문의</a>
+                        </li>
+                    </ul>
+
+
+                </nav>
 
             </div>
         </div>
     </header>
+
+
 
 
     <div id="topslide">
@@ -430,27 +440,38 @@
         }
         setInterval(topview, 3500);
 
-       
+
         // //헤더컬러체인지
-    $(document).ready(function () {
-        let currentScrollTop = 0;
-        $(window).scroll(function () {
-            currentScrollTop = $(window).scrollTop();
-            if (currentScrollTop > 1000) {
-                $("header").addClass("scroll");
-            } else {
-                $("header").removeClass("scroll");
-            }
+        $(document).ready(function () {
+            let currentScrollTop = 0;
+            $(window).scroll(function () {
+                currentScrollTop = $(window).scrollTop();
+                if (currentScrollTop > 1000) {
+                    $("header").addClass("scroll");
+                } else {
+                    $("header").removeClass("scroll");
+                }
 
-            if (currentScrollTop > 2100 && currentScrollTop < 3094) {
-                $("header").fadeOut();
-            } else {
-                $("header").fadeIn();
-            }
+                if (currentScrollTop > 2000 && currentScrollTop < 3094) {
+                    $("header").fadeOut();
+                } else {
+                    $("header").fadeIn();
+                }
 
+            });
         });
-    });
 
+        $(function () {
+            $('#menu2').click(function () {
+                $('#menu').slideToggle();
+            });
+        });
+
+        $(window).resize(function () {
+            if (window.innerWidth <= 768) {
+                $('#menu')
+            }
+        })
     </script>
 </body>
 
