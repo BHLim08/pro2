@@ -441,34 +441,35 @@
 
         // //헤더컬러체인지
         $(document).ready(function () {
-            let currentScrollTop = 0;
-            $(window).scroll(function () {
-                currentScrollTop = $(window).scrollTop();
-                if (currentScrollTop > 1000) {
-                    $("header").addClass("scroll");
-                } else {
-                    $("header").removeClass("scroll");
-                }
+                let currentScrollTop = 0;
+                $(window).scroll(function () {
+                    currentScrollTop = $(window).scrollTop();
+                    if (currentScrollTop > 1000) {
+                        $("header").addClass("scroll");
+                    } else {
+                        $("header").removeClass("scroll");
+                    }
 
-                if (currentScrollTop > 2000 && currentScrollTop < 3094) {
-                    $("header").fadeOut();
-                } else {
-                    $("header").fadeIn();
-                }
+                    if (currentScrollTop > 2000 && currentScrollTop < 3094) {
+                        $("header").fadeOut();
+                    } else {
+                        $("header").fadeIn();
+                    }
 
+                });
             });
-        });
 
-        $(function () {
-            $('#menu2').click(function () {
-                $('#menu').slideToggle();
+            $(function () {
+                $('#menu2').click(function () {
+                    $('#menu').slideToggle();
+                });
             });
-        });
 
-        $(window).resize(function () {
-            if (window.innerWidth <= 768) {
-                $('#menu')
-            }
+            $(window).resize(function () {
+                if (window.innerWidth <= 768) {
+                    $('#menu')
+                }
+        
         })
 
     </script>

@@ -60,14 +60,15 @@
     #menu {display: none;}
 
     #menu {width: 100%;}
-    ul,li {width: 100%; padding: 10px;}
+    #menu ul,li {width: 100%; padding: 10px; text-align: center;}
 
     header:hover,
     .scroll {
         background-color: #495c77c0;
     }
 
-    #menu a:hover  {background-color: #eee; color:#333;}
+    #menu li:hover  {background-color: rgba(255, 255, 255, 0.39); color:#333;}
+ 
 
 
     /* 박스 */
