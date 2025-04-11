@@ -3,6 +3,12 @@
 
 @media (min-width:1565px) {
 
+        .container {
+                width: 1280px;
+                margin: 0 auto;
+            }
+    
+
         /* 탑슬라이더 */
         #topslide {
                 width: 100%;
