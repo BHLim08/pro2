@@ -52,11 +52,17 @@
                 color: #eee;
         }
 
-        #menu2 {display: none;}
+        #menu2 {
+                display: none;
+        }
 
         #menu {
                 width: 1000px;
                 height: 90px;
+
+        }
+
+        #menu ul {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
