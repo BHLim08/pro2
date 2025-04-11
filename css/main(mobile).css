@@ -264,7 +264,7 @@
     }
 
     .short {
-        width: 95%;
+        width: 80%;
         margin: 1% auto;
         transition: all 0.5 ease-in-out;
         border-radius: 10px;
