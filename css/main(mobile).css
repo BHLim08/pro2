@@ -10,7 +10,7 @@
     /* 탑슬라이더 */
     #topslide {
         width: 100%;
-        height: 987px;
+        height: 600px;
         overflow: hidden;
     }
 
@@ -76,12 +76,12 @@
         width: 100%;
         position: relative;
         height: auto;
-        margin: -70px auto;
+        margin: -60px auto;
         color: #333;
     }
 
     .box {
-        width: 80%;
+        width: 95%;
         margin: 2% auto;
         display: flex;
         flex-wrap: wrap;
@@ -159,7 +159,6 @@
         border-radius: 10px;
         border: none;
         align-self: flex-end;
-        cursor: pointer;
         font-size: 18px;
         color: aliceblue;
         background-color: #495C77;
@@ -185,7 +184,6 @@
         margin-top: 20px;
         border-radius: 10px;
         border: none;
-        cursor: pointer;
         font-size: 18px;
         color: aliceblue;
         background-color: #495C77;
@@ -200,7 +198,7 @@
 
     .video iframe {
         width: 100%;
-        height: 600px;
+       
     }
 
     #icon {
@@ -212,8 +210,7 @@
     }
 
     #icon a {
-
-        font-size: 3.5vw;
+        font-size: 5vw;
         text-align: center;
         color: #9c9c9c;
     }
@@ -239,14 +236,13 @@
 
     #shortcut {
         width: 100%;
-        height: 650px;
         margin: 19% auto;
         display: flex; flex-wrap: wrap;       
         align-content: center;
     }
 
     .short {
-        width: 46%;
+        width: 100%;
         margin: 1% auto;
         transition: all 0.5 ease-in-out;
         border-radius: 10px;
@@ -331,9 +327,10 @@
     #etc {
         width: 100%;
         padding: 25px;
-        margin: 100px auto;
+        margin: 10% auto;
         color: #333;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
         border-radius: 10px;
@@ -341,7 +338,8 @@
     }
 
     .etcbox {
-        width: 100%;
+        width: 40%;
+        margin: 2% auto;
         text-align: center;
     }
 
@@ -363,23 +361,26 @@
     }
 
     .footer {width: 100%;
-        margin: 1% auto;
+        margin: 2%;
     }
 
-    .footer img {
-        width: 50%;
+    .footer img {width: 40%;
     }
 
     .footer p {
         width: 100%;
-        font-size: 1.1vmax;
+        font-size: 1.2vmax;
         color: #333;
     }
-    .footer button {
+    
+    .footer:nth-child(3){
+        width: 100%;
+    }
+
+    .footer button {    
         width: 20%;
         font-size: 1.1vmax;
         padding: 1%;
-        cursor: pointer;
         color: #333;
         border-radius: 10px;
         border: none;
