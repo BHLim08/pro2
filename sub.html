@@ -190,6 +190,8 @@
 
     <script>
 
+        //서브메인이미치 체인지
+
         let i = 0;
 
         function subslide (){
@@ -201,6 +203,34 @@
         };
 
         setInterval(subslide, 3000);
+
+        //헤더 컬러체인지
+        $(document).ready(function () {
+                let currentScrollTop = 0;
+                $(window).scroll(function () {
+                    currentScrollTop = $(window).scrollTop();
+                    if (currentScrollTop > 530) {
+                        $("header").addClass("scroll");
+                    } else {
+                        $("header").removeClass("scroll");
+                    }
+                });
+            });
+
+            //메뉴 슬라이드 미디어쿼리 (모바일)
+
+            $(function () {
+                $('#menu2').click(function () {
+                    $('#menu').slideToggle();
+                });
+            });
+
+            $(window).resize(function () {
+                if (window.innerWidth <= 768) {
+                    $('#menu').show();
+                }
+        
+        })
 
     </script>
 
