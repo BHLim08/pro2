@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="./css/sub.css">
+
+
 </head>
 
 
@@ -17,7 +20,7 @@
         <div class="container">
             <div id="header">
                 <div id="logo">
-                    <a href="#">
+                    <a href="./index.html">
                         <span>경복궁</span>
                     </a>
 
@@ -65,66 +68,80 @@
 
     <!-- 서브메뉴 -->
     <div id="submenu">
-        <table>
-            <tr>
-                <td><a href="">경복궁 소개</a></td>
-                <td><a href="">경복궁 역사</a></td>
-                <td><a href="">경복궁 이야기</a></td>
-                <td><a href="">경복궁 지도</a></td>
-            </tr>
-        </table>
+            <ul>
+                <li><a href="">경복궁 소개</a></li>
+                <li><a href="">경복궁 역사</a></li>
+                <li><a href="">경복궁 이야기</a></li>
+                <li><a href="">경복궁 지도</a></li>
+            </ul>   
     </div>
 
 
     <!-- 서브테이블 -->
 
-    <div id="subtable">
-        <table>
-            <tr>
-                <th>경복궁</th>
-                <th>경복궁 위치</th>
-                <th>경복궁도</th>
-            </tr>
+    <div id="subbox">
 
-            <tr>
-                <td><img src="./img/sub/subtable1.jpg" alt="subtable"></td>
-                <td><img src="./img/sub/subtable2.jpg" alt="subtable"></td>
-                <td><img src="./img/sub/subtable3.jpg" alt="subtable"></td>
-            </tr>
+        <div id="sbox">
+        <div>
+                <h2>경복궁</h2>
+                <img src="./img/sub/subtable1.jpg" alt="subtable">
+                <p>종목 - 사적 (구)제 117호<br>
+                    면적 - 432,703m²<br>
+                    시대 - 조선 태조4년 (1395)<br>
+                    소유 - 대한민국 정부(국가유산청)<br>
+                </p>              
+        </div>
 
-            <tr>
-                <td>종목 사적 (구)제 117호<br>
-                    면적 432,703m²<br>
-                    시대 조선 태조4년 (1395)<br>
-                    소유 대한민국 정부(국가유산청)<br>
-                    관리 국가유산청 경복궁관리소<br>
-                    </td>
-                <td>주소 
-                    서울특별시 종로구 사직로 161<br>
+        <div>
+          
+                <h2>경복궁 위치</h2>
+                <img src="./img/sub/subtable2.jpg" alt="subtable">
+                <p>주소 - <br>
+                    서울특별시 종로구 사직로 161
                     (세종로, 경복궁)<br>
-                    홈페이지 <br>
-                    http:/www.royalpalaac.go.k</td>
-                <td>임진왜란 이전의 모습을 반영한것으로<br>
+                    홈페이지 - <br>
+                    http:/www.royalpalaac.go.k</p>
+          
+        </div>
+
+        <div>
+       
+                <h2>경복궁도</h2>
+                <img src="./img/sub/subtable3.jpg" alt="subtable">
+                <p>임진왜란 이전의 모습을 반영한것으로<br>
                     추정되는 경복궁도 (서울 역사박물관)<br>
-                    홈페이지 <br>
-                    https://museum.seoul.go.kr/</td>
-            </tr>
-
-
-        </table>
+                    홈페이지 - <br>
+                    https://museum.seoul.go.kr/</p>             
+            
+        </div>
+    </div>
     </div>
 
 
     <!-- 서브메인 -->
     <div id="submain">
-        <div id="subimg">
-            <div class="subimg">
-                <img src="./img/sub/submain1.jpg" alt="submain">
-            </div>
+        <div id="subslide">
+            <ul class="subimg">
+                <li>
+                    <img src="./img/sub/submain1.jpg" alt="submain">
+                </li>
+                <li>
+                    <img src="./img/sub/submain2.jpg" alt="submain">
+                </li>
+                <li>
+                    <img src="./img/sub/submain3.jpg" alt="submain">
+                </li>
+                <li>
+                    <img src="./img/sub/submain4.jpg" alt="submain">
+                </li>
+                
+            </ul>
         </div>
+
         <div id="subtext">
-            <h2>경복궁</h2>
-            <h3>경복궁은 1392년 조선 건국 후 1395년(태조 4)에 창건한 조선왕조 제일의 법궁이다.</h3>
+            <div class="subtext">
+            <h1>경복궁</h1>
+            <h2>경복궁은 1392년 조선 건국 후 1395년(태조 4)에 창건한 조선왕조 제일의 법궁이다.</h2>
             <p>
                 경복궁은 백악산(북악산)을 주산으로 넓은 지형에 건물을 배치하였고 정문인 광화문 앞으로 
                 넓은 육조거리가 펼쳐진 한양의 중심이었다. ‘경복’의 이름은 ‘새 왕조가 큰 복을 누려 번영할 것’이라는
@@ -135,6 +152,7 @@
                 이후 1990년대부터 본격적으로 경복궁 복원공사가 진행되었고,
                 1995년부터 1997년까지 조선총독부 청사를 철거하였으며 흥례문 일원, 침전 권역, 건청궁과 태원전, 
                 그리고 광화문 등이 복원되어 현재에 이르고 있다.</p>
+            </div>    
         </div>
     </div>
 
@@ -168,7 +186,23 @@
         </div>
 
     </footer>
-    </div>
+    
+
+    <script>
+
+        let i = 0;
+
+        function subslide (){
+            i++;
+            if ( i > $(".subimg li:last").index()){ i = 0; 
+            }
+            $(".subimg li").eq(i).stop().fadeIn("slow");
+            $(".subimg li").eq(i-1).stop().fadeOut("slow");
+        };
+
+        setInterval(subslide, 3000);
+
+    </script>
 
 </body>
 

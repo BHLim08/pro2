@@ -51,7 +51,7 @@ header {
     width: 100%;
     height: 90px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     transition: all 0.4s ease-in-out;
 }
 
@@ -126,46 +126,63 @@ header:hover,
     text-align: center;
 }
 
-#submenu table {width: 100%; height: 90px; border: 1px solid #333;}
-#submenu td {border: 1px solid #333; font-size: 24px;}
+#submenu ul {width: 100%; height: 90px;
+            display: flex;}
+#submenu li {width: 25%; align-content: center; border: 1px solid #333; font-size: 24px;}
 
 /* 서브테이블 */
 
-#subtable {
+#subbox {
     width: 85%;
     height: 570px;
     margin: 150px auto;
-    text-align: center;
+    
 }
 
-#subtable table     {width: 100%; height: 100%; margin: 0 auto;}
-#subtable th {height: 120px; font-size: 24px;}
-#subtable tr:nth-child(3) {text-align: left;}
+#sbox {width: 100%; height: 100%; 
+        display: flex; justify-content: space-evenly;}
+#sbox h2 {padding: 30px; text-align: center;}
+#sbox img {padding-bottom: 15px;}
+#sbox p {letter-spacing: 3px; padding-left: 3px;}
+
+
 
 
 /* 서브메인 */
 
 #submain {
     width: 100%;
-    height: 780px;
+    height: 700px;
     margin: 150px auto;
-    display: flex;
+    display: flex; position: relative;
     justify-content: center;
-    background-color: blueviolet;
 }
 
-#subimg {
-    width: 791px;
-    height: 756px;
-    background-color: brown;
+#subslide {
+    width: 40%;
+    height: 780px;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
 }
+
+.subimg li {width: 100%;
+    position: absolute; top: 0; left: 0;}
+.subimg>li>img {width: 100%;}
+
+.subimg li:not(:first-child) {display: none;}
 
 #subtext {
-    width: 1114px;
-    height: 677px;
-    align-self: flex-end;
-    background-color: rgb(236, 255, 63);
+    width: 70%;
+    height: 37vw;
+    position: absolute;
+    align-content: center;
+    right: 0;
+    top: 50px;
+    background-color: #f0e8d8;
 }
+.subtext {width: 70%; padding: 1%;
+        position: absolute; left: 20%; bottom: 2vw;}
 
 
 /* 푸터 */
