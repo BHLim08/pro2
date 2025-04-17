@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="https://kit.fontawesome.com/7b6d17b275.js" crossorigin="anonymous"></script>
+
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/sub_slide.js"></script>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common(tablet).css">
+    <link rel="stylesheet" href="./css/common(mobile).css">
 
     <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/sub(tablet).css">
+    <link rel="stylesheet" href="./css/sub.(mobile).css">
 
 
 </head>
@@ -69,10 +80,10 @@
     <!-- 서브메뉴 -->
     <div id="submenu">
             <ul>
-                <li><a href="">경복궁 소개</a></li>
-                <li><a href="">경복궁 역사</a></li>
-                <li><a href="">경복궁 이야기</a></li>
-                <li><a href="">경복궁 지도</a></li>
+                <li><a href="./sub.html">경복궁 소개</a></li>
+                <li><a href="#">경복궁 역사</a></li>
+                <li><a href="#">경복궁 이야기</a></li>
+                <li><a href="#">경복궁 지도</a></li>
             </ul>   
     </div>
 
@@ -125,7 +136,7 @@
             <ul class="subimg">
                 <li>
                     <img src="./img/sub/submain1.jpg" alt="submain">
-                </li>
+                    </li>
                 <li>
                     <img src="./img/sub/submain2.jpg" alt="submain">
                 </li>
@@ -194,51 +205,7 @@
     </footer>
     
 
-    <script>
-
-        //서브메인이미치 체인지
-
-        let i = 0;
-
-        function subslide (){
-            i++;
-            if ( i > $(".subimg li:last").index()){ i = 0; 
-            }
-            $(".subimg li").eq(i).stop().fadeIn("slow");
-            $(".subimg li").eq(i-1).stop().fadeOut("slow");
-        };
-
-        setInterval(subslide, 3000);
-
-        //헤더 컬러체인지
-        $(document).ready(function () {
-                let currentScrollTop = 0;
-                $(window).scroll(function () {
-                    currentScrollTop = $(window).scrollTop();
-                    if (currentScrollTop > 530) {
-                        $("header").addClass("scroll");
-                    } else {
-                        $("header").removeClass("scroll");
-                    }
-                });
-            });
-
-            //메뉴 슬라이드 미디어쿼리 (모바일)
-
-            $(function () {
-                $('#menu2').click(function () {
-                    $('#menu').slideToggle();
-                });
-            });
-
-            $(window).resize(function () {
-                if (window.innerWidth <= 768) {
-                    $('#menu').show();
-                }
-        
-        })
-
-    </script>
+   
 
 </body>
 

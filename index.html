@@ -11,7 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="https://kit.fontawesome.com/7b6d17b275.js" crossorigin="anonymous"></script>
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/main.js"></script>
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/common(tablet).css">
@@ -390,7 +394,7 @@
 
     </footer>
 
-    <script>
+    <!-- <script>
         //탑슬라이더
         function topview() {
             $('.topview').stop().animate({
@@ -431,12 +435,14 @@
 
             $(window).resize(function () {
                 if (window.innerWidth <= 768) {
+                    $('#menu').hide();
+                } else {
                     $('#menu').show();
                 }
         
         })
 
-    </script>
+    </script> -->
 </body>
 
 </html>
