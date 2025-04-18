@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/* 서브탑 */
+#subtop {
+    width: 100%;
+    height: 432px;
+    background-color: blue;
+}
+
+#subtop div {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/sub/subtop1.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* 서브메뉴 */
+#submenu {
+    width: 100%;
+    height: 90px;
+    text-align: center;
+}
+
+#submenu ul {
+    width: 100%;
+    height: 90px;
+    display: flex;
+}
+
+#submenu li {
+    width: 25%;
+    align-content: center;
+    border: 1px solid #333;
+    font-size: 24px;
+}
+
+
+
+/* 서브스토리 */
+
+#storywrap {
+    width: 100%;
+    height: 1100px;
+    position: relative;
+    margin-top: 8%;
+}
+
+#storywrap span {
+    position: absolute;
+    top: 35%;
+}
+
+.prev {
+    left: 5%;
+}
+
+.next {
+    right: 5%;
+}
+
+
+#story1 {
+    width: 100%;
+    height: 41vw;
+    position: relative;
+    background-color: #495C77;
+}
+
+#story2 {
+    width: 70%;
+    height: 35vw;
+    z-index: 10;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    background-color: aqua;
+}
+
+.st_slide {
+    width: 1800%;
+    height: 35vw;
+    display: flex;
+}
+
+.st_slide>li {
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+
+.st_slide>li>img {
+    width: 6%;
+    height: 35vw;
+}
+
+
+.st_slide li:not(:first-child) {
+    display: none;
+}
+
+
+
+
+#story3 {
+    width: 80%;
+    height: 25%;
+    position: relative;
+    background-color: #F8F3E9;
+}
+
+.st_list {
+    width: 70%;
+    height: 150px;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.st_list li {
+    width: 11%;
+    height: 30%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+}
