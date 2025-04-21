@@ -1,45 +1,45 @@
 @charset "utf-8";
 
-@media (min-width:1150px) {
-/* 서브탑 */
-#subtop {
-    width: 100%;
-    height: 432px;
-    background-color: blue;
-}
+@media (max-width:768px){
 
-#subtop div {
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/sub/subtop1.jpg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-}
+    #subtop {
+        width: 100%;
+        height: 432px;
+        background-color: blue;
+    }
 
-/* 서브메뉴 */
-#submenu {
-    width: 100%;
-    height: 90px;
-    text-align: center;
-}
+    #subtop div {
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/sub/subtop1.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
 
-#submenu ul {
-    width: 100%;
-    height: 90px;
-    display: flex;
-}
+    /* 서브메뉴 */
 
-#submenu li {
-    width: 25%;
-    align-content: center;
-    border: 1px solid #333;
-    font-size: 24px;
-}
+    #submenu {
+        width: 100%;
+        text-align: center;
+    }
 
+    #submenu ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    #submenu li {
+        width: 50%;
+        padding: 3%;
+        align-content: center;
+        border: 1px solid #333;
+        font-size: 20px;
+    }
 
-/* 서브스토리 */
+    /* 서브스토리 */
 
 #storywrap {
     width: 100%;
@@ -150,5 +150,4 @@
 }
 
 .st_list>li:hover {background-color: #bbbbbb4b; border-radius: 10px;}
-
 }
