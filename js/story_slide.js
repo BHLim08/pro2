@@ -15,19 +15,19 @@ $(function () {
     //     });
     // });
 
-    let page = 0;
+    let idx = 0;
     $(".prev").hide();
 
     $(".prev").click(function () {
-        page--;
+        idx--;
         $(".next").show()
-        if (page < 0) {
-            page = 0;
+        if (idx < 0) {
+            idx = 0;
             return;
         }
 
 
-        $(".st_slide").stop().animate({ marginLeft: (-100 * page) + '%' }, 800, function () {
+        $(".st_slide").stop().animate({ marginLeft: (-100 * idx) + '%' }, 800, function () {
             if ($(".st_slide").css('marginLeft') == "0px") {
                 $(".prev").hide();
             } else { $(".prev").show() };
@@ -35,17 +35,17 @@ $(function () {
     });
 
     $(".next").click(function () {
-        page++;
+        idx++;
         $(".prev").show()
-        console.log(page)
-        if (page > $(".st_slide li").length - 1) {
-            page = $(".st_slide li").length - 1;
+        console.log(idx)
+        if (idx > $(".st_slide li").length - 1) {
+            idx = $(".st_slide li").length - 1;
             return;
         }
 
 
-        $(".st_slide").stop().animate({ marginLeft: (-100 * page) + '%' }, 800, function () {
-            if (page > $(".st_slide li").length - 2) {
+        $(".st_slide").stop().animate({ marginLeft: (-100 * idx) + '%' }, 800, function () {
+            if (idx > $(".st_slide li").length - 2) {
                 $(".next").hide();
             } else { $(".next").show() };
         });
@@ -53,7 +53,7 @@ $(function () {
 
     // 서브 탭 클릭
     $(".st_list li").click(function () {
-        let idx = $(this).index();
+        idx = $(this).index();
 
         $(".st_slide").stop().animate({ marginLeft: (-100 * idx) + '%' }, 1000, function () {
             if ($(".st_slide").css('marginLeft') == "0px") {

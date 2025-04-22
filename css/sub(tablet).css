@@ -72,7 +72,8 @@
     #sbox p {
         letter-spacing: 3px;
         padding-left: 3px;
-        font-size: 1.2vw;
+        font-size: 1.3vw;
+        line-height: 25px;
         font-family: 'Pretendard-Regular';
     }
 
@@ -144,10 +145,10 @@
     }
 
     .subtext p {
-        font-size: 1.2vw;
+        font-size: 1.3vw;
+        line-height: 30px;
         font-family: 'Pretendard-Regular';
     }
-
 
 
 
