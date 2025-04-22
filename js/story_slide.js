@@ -76,7 +76,7 @@ $(function () {
                 $("header").removeClass("scroll");
             }
     
-            if (currentScrollTop > 620 && currentScrollTop < 3094) {
+            if (currentScrollTop > 580 && currentScrollTop < 3094) {
                 $("header").fadeOut();
             } else {
                 $("header").fadeIn();
