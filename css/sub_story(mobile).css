@@ -51,20 +51,20 @@
 #storywrap span {
     position: absolute;
     z-index: 3;
-    top: 40%;
+    top: 41%;
 }
 
 .prev {
-    left: 2%;
+    left: 15%;
 
 }
 
 .next {
-    right: 2%;
+    right: 15%;
 }
 
 .prev , .next {
-    padding: 1%;
+    padding: 0.5%;
     font-size: 4vw;
     font-weight:bold;
     color: #ffffff52;
@@ -126,7 +126,7 @@
 
 #story3 {
     width: 100%;
-    height: 25%;
+    height: 28%;
     position:absolute;
     top: 75%;
     background-color: #F8F3E9;
@@ -135,15 +135,15 @@
 .st_list {
     width: 80%;
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 8%;
+    left: 15%;
     display: flex;
     flex-wrap: wrap;
 
 }
 
 .st_list>li {
-    width: 25%;
+    width: 30%;
     line-height: 40px;
     cursor: pointer;
     font-size: 3vw;
