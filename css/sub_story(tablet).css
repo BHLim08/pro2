@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media (min-width:768px) and (max-width:1200px){
+@media (min-width:768px) and (max-width:1150px){
 
     /* 서브탑 */
 
@@ -44,12 +44,12 @@
 
 #storywrap {
     width: 100%;
-    height: 78vw;
+    height: 110vw;
     position: relative;
-    margin-top: 15%;
+    margin: 15% 0;
 }
 
-#storywrap span {
+#storywrap span {z-index: 3;
     position: absolute;
     top: 32%;
 }
@@ -78,74 +78,70 @@
 
 #story1 {
     width: 100%;
-    height: 57.3%;
+    height: 80%;
     position: absolute;
     top: 0;
     background-color: #495C77;
 }
 
-#story1>h1 {font-size: 2vw;
+#story1>h1 {font-size: 3vw;
     color: #fff;
             position: absolute;
             top: 3%; left: 10%;}
 
 #story2 {
-    width: 83%;
+    width: 80%;
+    height: 68%;
     z-index: 2;
     position: absolute;
-    top: 6%;
+    top: 7%;
     left: 10%;
     overflow: hidden;
 }
 
 .st_slide {
     width: 1800%;
-    height: 40vw;
+    height: 100%;
     display: flex;
 }
 
-.st_slide>ul {width: 1800%; height: 100%; display: flex;}
-.st_slide>li {width: 100%; height: 100%; display: flex;}
-.st_slide>li>img {width: 70%; height: 100%;}
+.st_slide>ul {width: 1800%; height: 100%;}
+.st_slide>li {width: 100%; height: 100%;}
+.st_slide>li>img {width: 100%;}
 
 .st_text {
-    width: 26%;
-    height: 100%;
-    padding-left:1%; 
+    width: 95%;
+    margin: 1% auto;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-
 }
 .st_text>h2 {font-size: 2.5vw;}
-.st_text>p {font-size: 1.1vw; }
-
+.st_text>p {font-size: 1.4vw; }
 
 
 
 #story3 {
-    width: 85%;
-    height: 25%;
+    width: 100%;
+    height: 20%;
     position:absolute;
-    top: 57.3%;
+    top: 75%;
     background-color: #F8F3E9;
 }
 
 .st_list {
-    width: 80%;
-    height: 50%;
+    width: 90%;
     position: absolute;
     top: 20%;
-    left: 15%;
+    left: 10%;
     display: flex;
     flex-wrap: wrap;
 
 }
 
 .st_list>li {
-    width: 11%;
+    width: 15%;
+    line-height: 40px;
     cursor: pointer;
-    font-size: 1.3vw;
+    font-size: 1.8vw;
     text-align: center;
 }
 

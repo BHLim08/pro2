@@ -132,7 +132,6 @@
 
 .st_list {
     width: 80%;
-    height: 50%;
     position: absolute;
     top: 25%;
     left: 17%;
@@ -143,7 +142,7 @@
 
 .st_list>li {
     width: 11%;
-    padding: 2%;
+    line-height: 60px;
     cursor: pointer;
     font-size: 1.3vw;
     text-align: center;

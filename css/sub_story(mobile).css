@@ -39,34 +39,36 @@
         font-size: 20px;
     }
 
-    /* 서브스토리 */
+/* 서브스토리 */
 
 #storywrap {
     width: 100%;
-    height: 78vw;
+    height: 200vw;
+    margin-bottom: 20%;
     position: relative;
     margin-top: 15%;
 }
 
 #storywrap span {
     position: absolute;
-    top: 32%;
+    z-index: 3;
+    top: 40%;
 }
 
 .prev {
-    left: 4%;
+    left: 0%;
 
 }
 
 .next {
-    right: 3%;
+    right: 0%;
 }
 
 .prev , .next {
     padding: 1%;
-    font-size: 2vw;
+    font-size: 4vw;
     font-weight:bold;
-    color: #fff;
+    color: #ffffff52;
     cursor: pointer;
     background-color: #f8f8f857;
     border-radius: 10px;}
@@ -77,75 +79,75 @@
 
 #story1 {
     width: 100%;
-    height: 58%;
+    height: 75%;
     position: absolute;
     top: 0;
     background-color: #495C77;
 }
 
-#story1>h1 {font-size: 2vw;
+#story1>h1 {
+    font-size: 5.5vw;
     color: #fff;
             position: absolute;
-            top: 8%; left: 10%;}
+            top:2.3%;
+            left: 2%;}
 
 #story2 {
-    width: 83%;
+    width: 100%;
+    height: auto;
     z-index: 2;
     position: absolute;
-    top: 9%;
-    left: 10%;
+    top: 7%;
     overflow: hidden;
 }
 
 .st_slide {
     width: 1800%;
-    height: 40vw;
+
     display: flex;
 }
 
 .st_slide>ul {width: 1800%; height: 100%; display: flex;}
-.st_slide>li {width: 100%; height: 100%; display: flex;}
-.st_slide>li>img {width: 70%; height: 100%;}
+.st_slide>li {width: 100%; height: 100%;}
+.st_slide>li>img {width: 100%; height: 100%;}
 
 .st_text {
-    width: 26%;
+    width: 95%;
     height: 100%;
-    padding: 0.7% 0% 0% 1%; 
+   margin: 2% auto;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
 }
-.st_text>h2 {font-size: 2.5vw;}
-.st_text>p {font-size: 0.99vw; }
+
+.st_text>h2 {font-size: 4vw; padding: 1%;}
+.st_text>p {font-size: 2.9vw; }
 
 
 
 
 #story3 {
-    width: 85%;
+    width: 100%;
     height: 25%;
     position:absolute;
-    top: 58%;
+    top: 75%;
     background-color: #F8F3E9;
 }
 
 .st_list {
     width: 80%;
-    height: 50%;
     position: absolute;
-    top: 25%;
-    left: 17%;
+    top: 10%;
+    left: 10%;
     display: flex;
     flex-wrap: wrap;
 
 }
 
 .st_list>li {
-    width: 11%;
-    padding: 2%;
+    width: 25%;
+    line-height: 40px;
     cursor: pointer;
-    font-size: 1.3vw;
+    font-size: 3vw;
     text-align: center;
 }
 

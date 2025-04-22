@@ -110,7 +110,7 @@ footer {
 
 .footer p {
     width: 100%;
-    font-size: 1.1vmax;
+    font-size: 1.2vmax;
     letter-spacing: 1px;
     color: #333;
 }
@@ -125,7 +125,7 @@ footer {
 .footer button {
     width: 80%;
     height: 30%;
-    font-size: 1.2vmax;
+    font-size: 1.3vmax;
     margin: 3%;
     color: #333;
     border-radius: 10px;

@@ -65,5 +65,23 @@ $(function () {
             } else { $(".next").show() };
         });
     })
-});
 
+    // 스토리헤더컬러
+        let currentScrollTop = 0;
+        $(window).scroll(function () {
+            currentScrollTop = $(window).scrollTop();
+            if (currentScrollTop > 448) {
+                $("header").addClass("scroll");
+            } else {
+                $("header").removeClass("scroll");
+            }
+    
+            if (currentScrollTop > 620 && currentScrollTop < 3094) {
+                $("header").fadeOut();
+            } else {
+                $("header").fadeIn();
+            }
+    
+        });
+
+});
