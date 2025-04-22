@@ -39,8 +39,11 @@
         width: 100%;
     }
 
+    .box p {font-family: 'Pretendard-Regular';}
+
     .box table {
         width: 100%;
+        font-family: 'Pretendard-Regular';
 
     }
 
@@ -73,6 +76,7 @@
         margin-top: 5px;
         color: #333;
         font-size: 15px;
+        font-family: 'Pretendard-Regular';
     }
 
     #notictb th {
@@ -97,6 +101,7 @@
         font-size: 18px;
         color: aliceblue;
         background-color: #495C77;
+        font-family: 'Pretendard-Regular';
     }
 
 
@@ -125,6 +130,7 @@
         font-size: 18px;
         color: aliceblue;
         background-color: #495C77;
+        font-family: 'Pretendard-Regular';
     }
 
     /* 비디오 */
@@ -213,6 +219,7 @@
         padding: 8%;
         margin-top: 10%;
         background-color: #eee;
+        font-family: 'Pretendard-Regular';
     }
 
     #info h2 {
@@ -276,6 +283,7 @@
         align-items: center;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #999;
+        font-family: 'Pretendard-Regular';
     }
 
     .etcbox {

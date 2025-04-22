@@ -89,7 +89,8 @@ button {
 #sbox div {width: 25%;}
 #sbox h2 {padding: 10%; text-align: center; line-height: 32px;}
 #sbox>div>img {width: 100%;}
-#sbox p {letter-spacing: 3px; padding-left: 3px;}
+#sbox p {letter-spacing: 3px; padding-left: 3px;
+    font-family: 'Pretendard-Regular';}
 
 
 
@@ -133,6 +134,6 @@ button {
 
 .subtext h1 {font-size: 2.5vw; padding: 1% 0;}
 .subtext h2 {font-size: 1.2vw; padding: 1% 0;}
-.subtext p {font-size: 1vw;}
+.subtext p {font-size: 1.2vw; font-family: 'Pretendard-Regular';}
 
 }

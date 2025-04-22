@@ -71,6 +71,7 @@
         padding-top: 15px;
         font-size: 3vw;
         text-align: center;
+        font-family: 'Pretendard-Regular';
     }
 
 
@@ -121,5 +122,5 @@
     }
 
     .subtext h1,h2 {padding: 3%;}
-
+    .subtext p {font-family: 'Pretendard-Regular';}
     }

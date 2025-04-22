@@ -114,9 +114,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 .st_text>h2 {font-size: 2.5vw;}
-.st_text>p {font-size: 0.99vw; }
+.st_text>p {font-size: 0.99vw; 
+    line-height: 30px;
+    font-family: 'Pretendard-Regular'; }
 
 
 

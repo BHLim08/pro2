@@ -83,7 +83,8 @@ header:hover,
 /* 푸터 */
 footer {
     width: 100%;
-    background-color: rgb(212, 212, 212)
+    background-color: rgb(212, 212, 212);
+    font-family: 'Pretendard-Regular';
 }
 
 #footer {
@@ -131,6 +132,7 @@ footer {
     border-radius: 10px;
     border: none;
     background-color: #c0c0c0;
+    font-family: 'Pretendard-Regular';
 }
 
 

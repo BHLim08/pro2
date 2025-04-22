@@ -39,8 +39,11 @@
         .box h3 {
                 width: 100%;
         }
+        
+        .box p {font-family: 'Pretendard-Regular';}
 
         .box table {
+                font-family: 'Pretendard-Regular';
                 width: 95%;
                 letter-spacing: 5px;
                 line-height: 30px;
@@ -77,6 +80,7 @@
                 margin-top: 5px;
                 color: #333;
                 font-size: 15px;
+                font-family: 'Pretendard-Regular';
         }
 
         #notictb th {
@@ -102,6 +106,7 @@
                 font-size: 18px;
                 color: aliceblue;
                 background-color: #495C77;
+                font-family: 'Pretendard-Regular';
         }
 
 
@@ -136,6 +141,7 @@
                 font-size: 18px;
                 color: aliceblue;
                 background-color: #495C77;
+                font-family: 'Pretendard-Regular';
         }
 
 
@@ -222,6 +228,7 @@
                 padding: 15px;
                 font-size: 25px;
                 color: #eee;
+                
         }
 
         .short img:hover {
@@ -257,7 +264,9 @@
                 display: flex;
                 flex-direction: column;
                 border-radius: 10px;
-                background-color: white
+                background-color: white;
+                font-family: 'Pretendard-Regular';
+        
         }
 
         .infoimg {
@@ -297,6 +306,7 @@
                 align-items: center;
                 border-radius: 10px;
                 box-shadow: 3px 3px 5px #999;
+                font-family: 'Pretendard-Regular';
         }
 
         .etcbox {
