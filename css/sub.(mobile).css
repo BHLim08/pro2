@@ -83,13 +83,12 @@
     #submain {
         width: 100%;
         height: 1200px;
-        margin: 10% 0;
- 
+        margin: 20% auto;
     }
 
     #subslide {position: relative;
         width: 100%;
-        height: 45%;
+        height: 30%;
     }
 
     .subimg li {
@@ -110,19 +109,20 @@
     }
 
     #subtext {
-        width: 100%;     
+        width: 100%;
+        padding: 1% 0 15% 0;
         background-color: #f0e8d8;
     }
 
     .subtext {
-        width:90%;
+        width:98%;
         padding: 3%;
         margin: 0 auto;
         text-align: center;
-        line-height: 25px;
+
     }
 
-    .subtext h1,h2 {padding: 3%; line-height: 30px;}
+    .subtext h1,h2 {padding: 3%; line-height: 35px;}
     .subtext p {font-family: 'Pretendard-Regular';
     line-height: 30px;}
     }
