@@ -78,7 +78,7 @@
 
 #story1 {
     width: 100%;
-    height: 75%;
+    height: 78%;
     position: absolute;
     top: 0;
     background-color: #495C77;
@@ -120,7 +120,7 @@
 
 .st_text>h2 {font-size: 4vw; padding: 1%;}
 .st_text>p {font-size: 0.99vw; font-family: 'Pretendard-Regular'; }
-.st_text>p {font-size: 2.9vw; line-height: 25px;}
+.st_text>p {font-size: 2.5vw; line-height: 25px;}
 
 
 
@@ -129,7 +129,7 @@
     width: 100%;
     height: 28%;
     position:absolute;
-    top: 75%;
+    top: 78%;
     background-color: #F8F3E9;
 }
 
@@ -145,7 +145,7 @@
 
 .st_list>li {
     width: 30%;
-    line-height: 40px;
+    line-height: 30px;
     cursor: pointer;
     font-size: 3vw;
     text-align: center;
